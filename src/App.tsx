@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Redirect from './Redirect';
@@ -12,10 +10,8 @@ function App() {
   return (
     <>
    <Router>
-
-        <Route path="/" render={() => <App />} />
-        <Route path="/login.asp" render={() => <Redirect />} />
-
+        <Route path="/" element={<App />} />
+        <Route path="/login.asp" element={<Redirect />} />
     </Router>
     </>
   )
